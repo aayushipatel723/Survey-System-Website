@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|d:\\ddu data\\ddu sem 5\\wad\\survey_system\\survey_system\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|solutionrelative:survey_system\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|d:\\ddu data\\ddu sem 5\\wad\\survey_system\\survey_system\\homestyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|solutionrelative:survey_system\\homestyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\survey_system\\home.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|solutionrelative:survey_system\\home.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\survey_system\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|solutionrelative:survey_system\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\survey_system\\masterstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|solutionrelative:survey_system\\masterstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\survey_system\\utils\\db_utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|solutionrelative:survey_system\\utils\\db_utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\survey_system\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{26B4EC51-54BC-470A-899B-D4CBE24343CF}|Survey_System\\Survey_System.csproj|solutionrelative:survey_system\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.aspx",
+              "DocumentMoniker": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Home.aspx",
+              "RelativeDocumentMoniker": "Survey_System\\Home.aspx",
+              "ToolTip": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Home.aspx*",
+              "RelativeToolTip": "Survey_System\\Home.aspx*",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-08-16T17:23:52.022Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.aspx.cs",
+              "DocumentMoniker": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Home.aspx.cs",
+              "RelativeDocumentMoniker": "Survey_System\\Home.aspx.cs",
+              "ToolTip": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Home.aspx.cs",
+              "RelativeToolTip": "Survey_System\\Home.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T17:24:08.499Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeStyle.css",
+              "DocumentMoniker": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\HomeStyle.css",
+              "RelativeDocumentMoniker": "Survey_System\\HomeStyle.css",
+              "ToolTip": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\HomeStyle.css",
+              "RelativeToolTip": "Survey_System\\HomeStyle.css",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-17T11:07:48.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "masterStyle.css",
+              "DocumentMoniker": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\masterStyle.css",
+              "RelativeDocumentMoniker": "Survey_System\\masterStyle.css",
+              "ToolTip": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\masterStyle.css",
+              "RelativeToolTip": "Survey_System\\masterStyle.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-16T17:21:24.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Site1.Master",
+              "DocumentMoniker": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Site1.Master",
+              "RelativeDocumentMoniker": "Survey_System\\Site1.Master",
+              "ToolTip": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Site1.Master",
+              "RelativeToolTip": "Survey_System\\Site1.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-08-16T17:05:31.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DB_Utils.cs",
+              "DocumentMoniker": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Utils\\DB_Utils.cs",
+              "RelativeDocumentMoniker": "Survey_System\\Utils\\DB_Utils.cs",
+              "ToolTip": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Utils\\DB_Utils.cs",
+              "RelativeToolTip": "Survey_System\\Utils\\DB_Utils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T12:12:30.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Web.config",
+              "RelativeDocumentMoniker": "Survey_System\\Web.config",
+              "ToolTip": "D:\\DDU data\\DDU sem 5\\WAD\\Survey_System\\Survey_System\\Web.config",
+              "RelativeToolTip": "Survey_System\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-16T07:48:38.329Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

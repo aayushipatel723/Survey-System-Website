@@ -1,0 +1,104 @@
+﻿@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+/* reset css */
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, #ffffff, rgba(241, 241, 241, 1));
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
+
+/* header css */
+
+.site-header {
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .site-header p {
+        color: #800080;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+
+.site-navigation ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+    .site-navigation ul li {
+        display: block;
+        list-style: none;
+    }
+
+        .site-navigation ul li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+.site-main {
+    padding-bottom: 6em;
+    padding-top: 5em;
+    box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6em;
+}
+
+    .site-main .main-header {
+        max-width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+        .site-main .main-header article {
+            flex: 1 1 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+            .site-main .main-header article h1 {
+                font-size: 1.5rem;
+            }
+
+@media (max-width: 1100px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+        .site-header p {
+            text-align: center;
+        }
+}
+
+.site-main .main-header article img {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    display: block; /* Removes any extra spacing around the image */
+}
+
