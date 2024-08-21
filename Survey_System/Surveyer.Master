@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Surveyer.master.cs" Inherits="Survey_System.Surveyer" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <title>Surveyer Dashboard</title>
+    <link href="SurveyerMasterStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="head" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+   <header class="site-header">
+        <p>SurveyHub</p>
+        <nav class="site-navigation">
+            <ul>
+                <li><a href="Login.aspx">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div class="footer">
+
+                <div class="row">
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    SurveyHub Copyright © 2024 - All rights reserved
+                </div>
+            </div>
+    </footer>
+    </form>
+</body>
+</html>
