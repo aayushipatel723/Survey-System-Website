@@ -1,0 +1,92 @@
+﻿/* Global styles */
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    background-image: url('Images/RegistrationBg.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Center text */
+}
+
+h1 {
+    color: #333; /* Dark gray color */
+    font-size: 28px; /* Heading size */
+    margin-top: 20px; /* Space above heading */
+}
+
+/* Form container */
+form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Column direction */
+    align-items: center; /* Center align items */
+    margin-top: 20px; /* Space above form */
+}
+
+/* Home Button Styles */
+.home-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+    .home-button input[type="submit"],
+    .home-button input[type="button"],
+    .home-button asp\:Button {
+        background-color: #28a745; /* Green background for Home button */
+        color: white; /* White text for Home button */
+        border: none; /* No borders */
+        padding: 20px 40px; /* Increased padding for larger Home button */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Inline-block display */
+        font-size: 20px; /* Larger font size */
+        margin: 10px 5px; /* Margins around the Home button */
+        cursor: pointer; /* Pointer cursor */
+        border-radius: 8px; /* Rounded corners */
+    }
+
+        .home-button input[type="submit"]:hover,
+        .home-button input[type="button"]:hover,
+        .home-button asp\:Button:hover {
+            background-color: #218838; /* Darker green when hovering over Home button */
+        }
+
+/* GridView Styles */
+.gridview-container {
+    width: 80%; /* Width for the grid */
+    margin: 0 auto; /* Center the grid */
+}
+
+table {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full width table */
+    margin: 20px 0; /* Margin above and below the table */
+    background-color: #ffffff; /* White background for the table */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip content for rounded corners */
+}
+
+th, td {
+    padding: 10px; /* Cell padding */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white; /* White text for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+tr:hover {
+    background-color: #ddd;

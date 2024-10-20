@@ -1,0 +1,69 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    background-image: url('Images/RegistrationBg.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repetition of the image */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+h2 {
+    color: #333; /* Dark gray color for headings */
+    text-align: center; /* Center align heading text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Grid Styles */
+#ResponsesGridView {
+    width: 80%; /* Use 80% width for better appearance */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 20px auto; /* Center the grid */
+    background-color: white; /* Background color for the grid */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip the content for rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 12px; /* Increased padding for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #007BFF; /* Blue background for header */
+    color: white; /* White text for header */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+tr:hover {
+    background-color: #e6f7ff; /* Light blue background on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Padding for small screens */
+    }
+
+    #ResponsesGridView {
+        width: 100%; /* Full width grid on small screens */
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+
+    th, td {
+        padding: 10px; /* Smaller padding on mobile */
+    }
+}

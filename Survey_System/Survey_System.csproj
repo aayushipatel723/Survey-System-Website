@@ -67,24 +67,53 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddQuestions.aspx" />
+    <Content Include="AddQuestions.css" />
     <Content Include="App_Data\Survey_System_DB.mdf" />
     <Content Include="App_Data\Survey_System_DB_log.ldf">
       <DependentUpon>Survey_System_DB.mdf</DependentUpon>
     </Content>
+    <Content Include="CreateSurvey.css" />
+    <Content Include="CreateSurvey.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="HomeStyle.css" />
     <Content Include="Images\RegistrationBg.jpg" />
     <Content Include="Images\SurveyImage.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="LoginStyle.css" />
+    <Content Include="Logout.aspx" />
     <Content Include="masterStyle.css" />
+    <Content Include="ResponderHome.aspx" />
+    <Content Include="ResponderHome.css" />
     <Content Include="SignupStyle.css" />
+    <Content Include="SubmitResponse.aspx" />
+    <Content Include="SubmitResponse.css" />
     <Content Include="SurveyerMasterStyle.css" />
+    <Content Include="ThankYou.aspx" />
+    <Content Include="ThankYou.css" />
+    <Content Include="ViewResponses.aspx" />
+    <Content Include="ViewResponses.css" />
+    <Content Include="ViewSurveys.aspx" />
+    <Content Include="ViewSurveys.css" />
     <Content Include="Web.config" />
     <Content Include="Signup.aspx" />
     <Content Include="SurveyDashboard.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddQuestions.aspx.cs">
+      <DependentUpon>AddQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddQuestions.aspx.designer.cs">
+      <DependentUpon>AddQuestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateSurvey.aspx.cs">
+      <DependentUpon>CreateSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateSurvey.aspx.designer.cs">
+      <DependentUpon>CreateSurvey.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,7 +128,21 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponderHome.aspx.cs">
+      <DependentUpon>ResponderHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResponderHome.aspx.designer.cs">
+      <DependentUpon>ResponderHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -107,12 +150,26 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="SubmitResponse.aspx.cs">
+      <DependentUpon>SubmitResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubmitResponse.aspx.designer.cs">
+      <DependentUpon>SubmitResponse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Surveyer.Master.cs">
       <DependentUpon>Surveyer.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Surveyer.Master.designer.cs">
       <DependentUpon>Surveyer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utils\DB_Utils.cs" />
     <Compile Include="Signup.aspx.cs">
@@ -128,6 +185,20 @@
     </Compile>
     <Compile Include="SurveyDashboard.aspx.designer.cs">
       <DependentUpon>SurveyDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewResponses.aspx.cs">
+      <DependentUpon>ViewResponses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewResponses.aspx.designer.cs">
+      <DependentUpon>ViewResponses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSurveys.aspx.cs">
+      <DependentUpon>ViewSurveys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSurveys.aspx.designer.cs">
+      <DependentUpon>ViewSurveys.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

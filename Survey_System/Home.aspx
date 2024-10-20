@@ -9,10 +9,14 @@
             <ul>
                 <li><a href="Login.aspx">Login</a></li>
                 <li><a href="Signup.aspx">SignUp</a></li>
+                <li runat="server" id="navSurveys" visible="false"><a href="ResponderHome.aspx">View Surveys</a></li>
+                <li runat="server" id="navCreateSurvey" visible="false"><a href="CreateSurvey.aspx">Create Survey</a></li>
+                <li runat="server" id="navViewForms" visible="false"><a href="ViewSurveys.aspx">View Your Forms</a></li>
+                <li runat="server" id="navLogout" visible="false"><a href="Logout.aspx">Logout</a></li>
             </ul>
         </nav>
     </header>
-        <main class="site-main">
+    <main class="site-main">
         <section class="main-header">
             <article>
                 <h1>Why SurveyHub Matters?</h1>
@@ -20,5 +24,5 @@
                 <img src="Images/SurveyImage.jpg" alt="SurveyHub Image" />
             </article>
         </section>
-        </main>
+    </main>
 </asp:Content>

@@ -1,17 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Survey_System
 {
-    public partial class Home : System.Web.UI.Page
+    public partial class Home : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                if (Session["UserEmail"] != null)
+                {
+                    string userType = Session["UserType"] as string;
+                    navLogout.Visible = true;
 
+                    if (userType == "Surveyer")
+                    {
+                        navCreateSurvey.Visible = true;
+                        navViewForms.Visible = true;
+                    }
+                    else if (userType == "Respondent")
+                    {
+                        navSurveys.Visible = true;
+                    }
+                }
+                else
+                {
+                    navLogout.Visible = false;
+                }
+            }
         }
     }
 }

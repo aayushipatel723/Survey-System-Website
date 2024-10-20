@@ -1,9 +1,7 @@
 ﻿using Survey_System.Utils;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -14,7 +12,11 @@ namespace Survey_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // Optional: Clear session if already logged in
+            if (Session["UserEmail"] != null)
+            {
+                Response.Redirect("Home.aspx");
+            }
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -32,8 +34,8 @@ namespace Survey_System
             // Connection string
             string connectionString = DB_Utils.getConnectionString();
 
-            // SQL query to check user credentials
-            string query = "SELECT COUNT(*) FROM [User] WHERE Email = @Email AND Password = @Password";
+            // SQL query to check user credentials and retrieve user type
+            string query = "SELECT Id, Email, User_type FROM [User] WHERE Email = @Email AND Password = @Password";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -44,12 +46,25 @@ namespace Survey_System
                 try
                 {
                     connection.Open();
-                    int userCount = (int)command.ExecuteScalar();
+                    SqlDataReader reader = command.ExecuteReader();
 
-                    if (userCount > 0)
+                    if (reader.HasRows)
                     {
                         // Successful login
-                        Response.Redirect("Home.aspx");
+                        if (reader.Read())
+                        {
+                            string userEmail = reader["Email"].ToString();
+                            string userType = reader["User_type"].ToString();
+                            string userId = reader["Id"].ToString(); // Use 'Id' from schema
+
+                            // Set session variables
+                            Session["UserEmail"] = userEmail;
+                            Session["UserType"] = userType;
+                            Session["UserId"] = userId; // Store 'Id' in session
+
+                            // Redirect to the home page or dashboard
+                            Response.Redirect("Home.aspx");
+                        }
                     }
                     else
                     {
