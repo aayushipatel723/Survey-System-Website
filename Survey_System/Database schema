@@ -1,0 +1,59 @@
+CREATE TABLE [dbo].[QuestionResponses] (
+    [ResponseID]       INT            NOT NULL,
+    [QuestionID]       INT            NOT NULL,
+    [ResponseText]     NVARCHAR (255) NULL,
+    [SelectedOptionID] INT            NULL,
+    PRIMARY KEY CLUSTERED ([ResponseID] ASC, [QuestionID] ASC),
+    FOREIGN KEY ([ResponseID]) REFERENCES [dbo].[SurveyResponses] ([ResponseID]),
+    FOREIGN KEY ([QuestionID]) REFERENCES [dbo].[SurveyQuestions] ([QuestionID]),
+    FOREIGN KEY ([SelectedOptionID]) REFERENCES [dbo].[SurveyOptions] ([OptionID])
+);
+
+CREATE TABLE [dbo].[SurveyForms] (
+    [FormID]      INT            IDENTITY (1, 1) NOT NULL,
+    [FormName]    NVARCHAR (255) NOT NULL,
+    [CreatedBy]   NVARCHAR (255) NOT NULL,
+    [CreatedDate] DATETIME       DEFAULT (getdate()) NOT NULL,
+    PRIMARY KEY CLUSTERED ([FormID] ASC)
+);
+
+CREATE TABLE [dbo].[SurveyOptions] (
+    [OptionID]   INT            IDENTITY (1, 1) NOT NULL,
+    [QuestionID] INT            NOT NULL,
+    [OptionText] NVARCHAR (255) NOT NULL,
+    PRIMARY KEY CLUSTERED ([OptionID] ASC),
+    FOREIGN KEY ([QuestionID]) REFERENCES [dbo].[SurveyQuestions] ([QuestionID])
+);
+
+CREATE TABLE [dbo].[SurveyQuestions] (
+    [QuestionID]   INT            IDENTITY (1, 1) NOT NULL,
+    [FormID]       INT            NOT NULL,
+    [QuestionText] NVARCHAR (255) NOT NULL,
+    [FieldType]    NVARCHAR (50)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([QuestionID] ASC),
+    CONSTRAINT [FK__SurveyQue__FormI__5224328E] FOREIGN KEY ([FormID]) REFERENCES [dbo].[SurveyForms] ([FormID]) ON DELETE CASCADE
+);
+
+CREATE TABLE [dbo].[SurveyResponses] (
+    [ResponseID]   INT            IDENTITY (1, 1) NOT NULL,
+    [FormID]       INT            NOT NULL,
+    [ResponderID]  NVARCHAR (255) NULL,
+    [ResponseDate] DATETIME       DEFAULT (getdate()) NULL,
+    PRIMARY KEY CLUSTERED ([ResponseID] ASC),
+    FOREIGN KEY ([FormID]) REFERENCES [dbo].[SurveyForms] ([FormID])
+);
+
+CREATE TABLE [dbo].[User] (
+    [Id]           INT           IDENTITY (1, 1) NOT NULL,
+    [Email]        NVARCHAR (30) NOT NULL,
+    [Password]     NVARCHAR (20) NOT NULL,
+    [User_type]    NVARCHAR (10) NOT NULL,
+    [Profession]   NVARCHAR (50) NOT NULL,
+    [Organization] NVARCHAR (50) NOT NULL,
+    [Dob]          DATE          NOT NULL,
+    [Gender]       NVARCHAR (10) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [CK_User_gender] CHECK ([Gender]='Male' OR [Gender]='Female' OR [Gender]='Others'),
+    CONSTRAINT [CK_User_type] CHECK ([User_type]='Surveyer' OR [User_type]='Respondent')
+);
+
